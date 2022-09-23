@@ -1,5 +1,33 @@
 @import 'basic/_normalize.scss';
 @import 'basic/_fonts.scss';
-p {
-    font-family: 'Poppins';
+@import 'layout/_header.scss';
+@import 'layout/_media.scss';
+.wrapper {
+    display: grid;
+    min-height: 100vh;
+    grid-template:minmax(100px, auto) 1fr minmax(100px, auto) / 1fr;
+    font-family: 'Poppins',sans-serif;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+                         
+}
+.header {
+    display: grid;
+    grid-area:header;
+    grid-template:1fr/ 1fr minmax(200px,1170px) 1fr;
+    
+}
+.main {
+    grid-area:main;
+  
+
+}
+.footer {
+    grid-area:footer;
+    
+
+}
+.title {
+
 }
