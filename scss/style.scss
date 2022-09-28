@@ -1,11 +1,18 @@
 @import 'basic/_normalize.scss';
 @import 'basic/_fonts.scss';
 @import 'layout/_header.scss';
+@import 'layout/_real.scss';
+@import 'layout/_brands.scss';
+@import 'layout/_than.scss';
 @import 'layout/_media.scss';
+body {
+    background-color: #E5E5E5;
+}
 .wrapper {
+   
     display: grid;
     min-height: 100vh;
-    grid-template:minmax(100px, auto) 1fr minmax(100px, auto) / 1fr;
+    grid-template:minmax(100px, auto) 1fr  minmax(100px, auto) / 1fr;
     font-family: 'Poppins',sans-serif;
     grid-template-areas: "header"
                          "main"
@@ -20,8 +27,8 @@
 }
 .main {
     grid-area:main;
-  
-
+    display: grid; 
+ 
 }
 .footer {
     grid-area:footer;
@@ -29,5 +36,14 @@
 
 }
 .title {
-
+    font-size: 60px;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+.button {
+padding: 15px 30px;   
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 3px;
+color:#fff;
+text-transform: capitalize;
 }

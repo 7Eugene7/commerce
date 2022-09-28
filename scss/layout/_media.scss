@@ -6,16 +6,63 @@
         &__list {
             column-gap: 20px;
         }
+
+    }
+    .real-main {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        &__row  {
+            grid-template-columns: 1fr;
+            flex-direction: column-reverse;
+            display: flex;
+        }    
+        &__sub-text {
+            justify-items: flex-start;
+        }
+        .content-main {
+            display: grid;
+            justify-items: center;
+            &__text {
+                padding-bottom: 25px;
+            }
+        }
+        .background-main {
+            display: grid;
+            justify-content: center;
+            img {
+                max-width: 100%;
+                transform: rotate(0deg);
+                margin-bottom: 20px;
+            }
+            .background-main__bg_1 {
+                margin-left: 0px;
+            }
+        }
+        &__line {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .than-main {
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap:50px;
+        }
+        .less {
+            margin: 0 auto;
+        }
     }
 }
+
 @media (max-width:767px) {
     body.lock {
         overflow: hidden;
     }
-    .header {
-        
+    .header {  
         &__body {
-            height: 55px;
+            height: 60px;
         }
         &__burger {
             display: block;
@@ -74,8 +121,7 @@
         z-index: 2;
         color: #FFFFFF;
         background-color: #1D92FF;
-        margin-top: 20px;
-       
+        margin-top: 20px;      
         }
         &__link {
             font-size: 24px;
@@ -123,4 +169,55 @@
    .main {
     margin-top: -40px;
    }
+   .real-main {
+    .title {
+        font-size: 36px;
+    }
+   }
+   .brands-main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__images {
+        justify-content: center;
+    }
+   }
+   .than-main {
+        .circle {
+            
+                &__bg { 
+                    left: 0!important;
+                }
+                &__img {
+                    left: 0!important; 
+                    
+                }
+            
+        
+        }
 }
+}
+@media (max-width:500px) {
+    .real-main {
+        &__buttons {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .than-main {
+        .circle {
+            
+                &__bg { 
+                    display: none;
+                }
+                &__img {
+                    display: none;
+                    
+                } 
+        }
+        .title {
+            font-size: 24px;
+        }
+}
+}
+
+

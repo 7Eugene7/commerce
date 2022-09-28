@@ -1,0 +1,22 @@
+
+.brands-main {
+    display: grid;
+    grid-template:1fr/ 1fr minmax(200px,1170px) 1fr;
+    padding: 130px 15px;
+
+    &__body {
+        grid-column: 2/3;
+        display: grid;
+    }
+    &__content {
+        
+    }
+    &__images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 90px;
+    }
+    &__img {
+        max-width: 100%;
+    }
+}

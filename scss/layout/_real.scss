@@ -1,0 +1,111 @@
+
+.real-main {
+    padding: 100px 15px;
+    background-color: #002547;
+    display: grid; 
+    grid-template:1fr/ 1fr minmax(200px,1170px) 1fr;
+   
+    &__body {
+        display: grid;
+       grid-column: 2/3;
+       position: relative;
+    }
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    &__content {
+        
+    }
+    &__line {
+        position: relative;
+        img {
+            position: absolute;
+            top: -210px;
+            left: -95px;
+        }
+    }
+    .content-main {
+        &__link {
+            color:#fff;
+            transition: all 2s ease 0s;
+            text-decoration: underline;
+            &:hover {
+                color:#1D92FF;
+            }
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: capitalize;
+            color: rgba(255, 255, 255, 0.5);
+            max-width: 450px;
+        }
+    }
+    &__sub-text {
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #1D92FF;
+
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 140%;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        span {
+            color: #1D92FF;
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        text-transform: capitalize;
+        color: rgba(255, 255, 255, 0.7);
+        text-transform: capitalize;
+        max-width: 400px;
+    }
+    
+    &__buttons {
+        display: flex;
+        column-gap:30px;
+        row-gap: 10px;
+        flex-wrap: wrap;
+        padding: 40px 0 55px 0;
+        
+        .button-main__left {
+        }
+        .button-main__right {
+        }
+    }
+    &__button {
+        transition: all 2s ease 0s;
+        &:hover {
+            color: #1D92FF;
+            background-color: #fff;
+        }
+    }
+}
+.background-main {
+    &__body {      
+    }
+    &__bg_1 {
+        margin-left: 40px;
+        img {
+        border-radius: 20px;
+        transform: rotate(5deg);
+        max-width: 550px;
+        }
+    }
+    
+}
+
+
+
+
+
+
