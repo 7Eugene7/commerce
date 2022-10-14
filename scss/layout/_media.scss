@@ -54,6 +54,16 @@
             margin: 0 auto;
         }
     }
+    .has {
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);        
+        }
+        .item-has {
+                display: grid;
+                justify-content: center;
+        }
+    }
 }
 
 @media (max-width:767px) {
@@ -217,7 +227,11 @@
         .title {
             font-size: 24px;
         }
+        .saas__items {
+            padding-top: 0;
+        }
 }
+
 }
 
 
